@@ -14,10 +14,10 @@ const Countries = () => {
   return (
     <div className="container">
       <h2>World Country List</h2>
-      <span>Total County - {countries.length}</span>
+      <span>Total Country - {countries.length}</span>
       <div className="grid-container">
         {countries.map((country) => (
-          <Country country={country} />
+          <Country country={country} key={country.cca3} />
         ))}
       </div>
     </div>
